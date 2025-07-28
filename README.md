@@ -11,10 +11,27 @@ This is a Python-based Google Maps Scraper that lets you extract business detail
 - Supports multiple keywords via input.txt
 - Extracts: name, phone, website, address, category, reviews, and GPS coordinates
 
+## Download Repository
+
+- via HTTPS
+
+```markdown
+wget https://github.com/deploywithshubham/google-map-scraper.git
+```
+
+- Via GitHub CLI
+
+```markdown
+gh repo clone deploywithshubham/google-map-scraper
+```
+
 ## Requirements
 
 - Install dependencies with:
-- ``` pip install -r requirements.txt ```
+
+```markdown
+pip install -r requirements.txt
+```
 
 ### Required packages
 
@@ -26,8 +43,33 @@ This is a Python-based Google Maps Scraper that lets you extract business detail
 - lxml
 - python-dotenv
 
-## One-Time Setup
+### One-Time Setup
 
- ``` playwright install ```
+ ```markdown
+ playwright install 
+ ```
 
 ## How to Use
+
+```markdown
+python main.py -s "hotels in london" - 10
+```
+
+- s: Search keyword
+- t: Number of new unique results
+
+## Output
+
+Scraped data will be saved in:
+
+- GMaps Data → all_scraped_master.csv → YYYY-MM-DD → hotels in london.csv
+
+## Notes
+
+- Only new businesses (not previously scraped) will be saved.
+- Make sure your internet is stable while scraping Google Maps.
+- Headless mode is disabled for debugging and visibility.
+
+## License
+
+This project is licensed for personal or educational use. Use responsibly and avoid violating Google Maps terms of service.
