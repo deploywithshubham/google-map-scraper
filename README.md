@@ -40,13 +40,7 @@ python get-pip.py
 - via HTTPS
 
 ```markdown
-curl https://github.com/deploywithshubham/google-map-scraper.git
-```
-
-- Via GitHub CLI
-
-```markdown
-gh repo clone deploywithshubham/google-map-scraper
+git clone https://github.com/deploywithshubham/google-map-scraper.git
 ```
 
 ## Requirements
@@ -76,7 +70,7 @@ pip install -r requirements.txt
 ## How to Use
 
 ```markdown
-python main.py -s "hotels in london" - 10
+python main.py -s "hotels in london" -t 10
 ```
 
 - s: Search keyword
